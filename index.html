@@ -28,6 +28,10 @@
             cursor: pointer;
             transition: 0.3s;
             font-size: 17px;
+            /*border-style: dashed;
+            border-width: 1px;
+            border-color: #cccccc;*/
+            
         }
 
         /* Change background color of buttons on hover */
@@ -53,13 +57,16 @@
 </head>
 
 <body>
+<div style="background-color: #dddddd; padding: 25px; margin-bottom: 5px; border-style: solid; border-color: darkgray; border-width: 1px;">
 
-<center>
-    <div style="background-color: #dddddd; padding: 20px; margin-bottom: 5px; border-style: solid; border-color: darkgray; border-width: 1px;">
-        <h2 style="margin: 10px">Product Videos</h2>
-        <img width="120px" src="cropped-logo.png"></img><br />
+    <center>
+        <h1 style="margin: 10px">Product Videos</h1>
+    </center>
+    <div style="float: right; ">
+        <img  width="200px" src="cropped-logo.png"></img><br />
+
     </div>
-</center>
+</div>
 
 <div class="tab">
     <button class="tablinks" onclick="openVideo(event, 'vid7')" id="defaultOpen">Max Range Car (300m) </button>
