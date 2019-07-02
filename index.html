@@ -57,28 +57,36 @@
 </head>
 
 <body>
-<div style="background-color: #dddddd; padding: 25px; margin-bottom: 5px; border-style: solid; border-color: darkgray; border-width: 1px;">
+    <div style="background-color: #dddddd; padding: 25px; margin-bottom: 5px; border-style: solid; border-color: darkgray; border-width: 1px;">
 
-    <center>
-        <h1 style="margin: 10px">Product Videos</h1>
-    </center>
-    <div style="float: right; ">
-        <img  width="200px" src="cropped-logo.png"></img><br />
+        <center>
+            <h1 style="margin: 10px">Product Videos</h1>
+        </center>
+        <div style="float: right; ">
+            <img width="200px" src="cropped-logo.png"></img><br />
+
+        </div>
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openVideo(event, 'vid7')" id="defaultOpen">Max Range Car (300m) </button>
+        <button class="tablinks" onclick="openVideo(event, 'vid8')">Max Range Ped. (100m) </button>
+        <button class="tablinks" onclick="openVideo(event, 'vid4')">Field-Of-View (180 deg)</button>
+        <button class="tablinks" onclick="openVideo(event, 'vid2')">Angle Res. (0.5 deg)</button>
+        <button class="tablinks" onclick="openVideo(event, 'vid5')">Tracking Demo 1</button>
+        <button class="tablinks" onclick="openVideo(event, 'vid6')">Tracking Demo 2</button>
+        <button class="tablinks" onclick="openVideo(event, 'vid1')">Point Cloud Demo 1</button>
+        <button class="tablinks" onclick="openVideo(event, 'vid3')">Point Cloud Demo 2</button>
+        <button class="tablinks" onclick="openVideo(event, 'vid0')">Classification</button>
 
     </div>
-</div>
 
-<div class="tab">
-    <button class="tablinks" onclick="openVideo(event, 'vid7')" id="defaultOpen">Max Range Car (300m) </button>
-    <button class="tablinks" onclick="openVideo(event, 'vid8')">Max Range Ped. (100m) </button>
-    <button class="tablinks" onclick="openVideo(event, 'vid4')">Field-Of-View (180 deg)</button>
-    <button class="tablinks" onclick="openVideo(event, 'vid2')">Angle Res. (0.5 deg)</button>
-    <button class="tablinks" onclick="openVideo(event, 'vid5')">Tracking Demo 1</button>
-    <button class="tablinks" onclick="openVideo(event, 'vid6')">Tracking Demo 2</button>
-    <button class="tablinks" onclick="openVideo(event, 'vid1')">Point Cloud Demo 1</button>
-    <button class="tablinks" onclick="openVideo(event, 'vid3')">Point Cloud Demo 2</button>
-
-</div>
+    <div id="vid0" class="tabcontent">
+        <video height="100%" width="100%" controls autoplay>
+            <source src="/mpeg4/Classification.mp4" type="video/mp4">
+            <p>Your browser does not support HLS playback in HTML5.</p>
+        </video>
+    </div>
 
     <div id="vid1" class="tabcontent">
         <video height="100%" width="100%" controls autoplay>
