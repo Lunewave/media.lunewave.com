@@ -86,20 +86,53 @@
 
     <div class="tab">
         <button class="tablinks" onclick="openVideo(event, 'vid0')" id="defaultOpen">Classification</button>
+
         <button class="tablinks" onclick="openVideo(event, 'vid7')">Max Range Car (300m) </button>
         <button class="tablinks" onclick="openVideo(event, 'vid8')">Max Range Ped. (100m) </button>
         <button class="tablinks" onclick="openVideo(event, 'vid4')">Field-Of-View (180 deg)</button>
         <button class="tablinks" onclick="openVideo(event, 'vid2')">Angle Res. (0.5 deg)</button>
-        <button class="tablinks" onclick="openVideo(event, 'vid5')">Tracking Demo 1</button>
-        <button class="tablinks" onclick="openVideo(event, 'vid6')">Tracking Demo 2</button>
+        <button class="tablinks" onclick="openVideo(event, 'vid12')">Tracking Demo 1  </button>
+        <button class="tablinks" onclick="openVideo(event, 'vid5')">Tracking Demo 2</button>
+        <button class="tablinks" onclick="openVideo(event, 'vid6')">Tracking Demo 3</button>
         <button class="tablinks" onclick="openVideo(event, 'vid1')">Point Cloud Demo 1</button>
         <button class="tablinks" onclick="openVideo(event, 'vid3')">Point Cloud Demo 2</button>
-
+        <button class="tablinks" onclick="openVideo(event, 'vid9')">LiDAR vs RADAR 1 </button>
+        <button class="tablinks" onclick="openVideo(event, 'vid10')">LiDAR vs RADAR 2 </button>
+        <button class="tablinks" onclick="openVideo(event, 'vid11')">LiDAR vs RADAR 3 </button>
     </div>
 
     <div id="vid0" class="tabcontent">
         <video height="100%" width="100%" controls autoplay>
             <source src="/mpeg4/Classification.mp4" type="video/mp4">
+            <p>Your browser does not support HLS playback in HTML5.</p>
+        </video>
+    </div>
+
+    <div id="vid9" class="tabcontent">
+        <video height="100%" width="100%" controls autoplay>
+            <source src="/mpeg4/LiDAR vs RADAR Demo 1.mp4" type="video/mp4">
+            <p>Your browser does not support HLS playback in HTML5.</p>
+        </video>
+    </div>
+
+    <div id="vid10" class="tabcontent">
+        <video height="100%" width="100%" controls autoplay>
+            <source src="/mpeg4/LiDAR vs RADAR Demo 2.mp4" type="video/mp4">
+            <p>Your browser does not support HLS playback in HTML5.</p>
+        </video>
+    </div>
+
+
+    <div id="vid11" class="tabcontent">
+        <video height="100%" width="100%" controls autoplay>
+            <source src="/mpeg4/LiDAR vs RADAR Demo 3.mp4" type="video/mp4">
+            <p>Your browser does not support HLS playback in HTML5.</p>
+        </video>
+    </div>
+
+    <div id="vid12" class="tabcontent">
+        <video height="100%" width="100%" controls autoplay>
+            <source src="/mpeg4/Tracking Demo.mp4" type="video/mp4">
             <p>Your browser does not support HLS playback in HTML5.</p>
         </video>
     </div>
@@ -171,22 +204,22 @@
 
     <script>
 
-    videoElements = document.getElementsByName("video");
-    for (i = 1; i < videoElements.length; i++) {
-        videoElements[i].pause();
-    }
+        videoElements = document.getElementsByName("video");
+        for (i = 1; i < videoElements.length; i++) {
+            videoElements[i].pause();
+        }
 
 
         function openVideo(evt, id) {
-            var i, tabcontent, tablinks,videoElements;
+            var i, tabcontent, tablinks, videoElements;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
 
             videoElements = document.getElementsByTagName("video");
-             for (i = 0; i < videoElements.length; i++) {
-                 videoElements[i].pause();
+            for (i = 0; i < videoElements.length; i++) {
+                videoElements[i].pause();
             }
 
             tablinks = document.getElementsByClassName("tablinks");
