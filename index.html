@@ -85,15 +85,16 @@
     </div>
 
     <div class="tab">
-         <button class="tablinks" onclick="openVideo(event, 'vid13')"> Lunewave vs Competitor 1</button>
-        <button class="tablinks" onclick="openVideo(event, 'vid14')"> Lunewave vs Competitor 2</button>
+        <button class="tablinks" onclick="openVideo(event, 'vid13')">Lunewave vs Competitor 1</button>
+        <button class="tablinks" onclick="openVideo(event, 'vid14')">Lunewave vs Competitor 2</button>
+	<button class="tablinks" onclick="openVideo(event, 'vid15')">v3 Static Demo</button>
         <button class="tablinks" onclick="openVideo(event, 'vid9')">LiDAR vs RADAR 1 </button>
         <button class="tablinks" onclick="openVideo(event, 'vid10')">LiDAR vs RADAR 2 </button>
         <button class="tablinks" onclick="openVideo(event, 'vid11')">LiDAR vs RADAR 3 </button>
         <button class="tablinks" onclick="openVideo(event, 'vid12')" id="defaultOpen" >Tracking Demo 1  </button>
         <button class="tablinks" onclick="openVideo(event, 'vid5')">Tracking Demo 2</button>
         <button class="tablinks" onclick="openVideo(event, 'vid6')">Tracking Demo 3</button>
-        <button class="tablinks" onclick="openVideo(event, 'vid0')" >Classification</button>
+        <button class="tablinks" onclick="openVideo(event, 'vid0')">Classification</button>
 
         <button class="tablinks" onclick="openVideo(event, 'vid7')">Max Range Car (300m) </button>
         <button class="tablinks" onclick="openVideo(event, 'vid8')">Max Range Ped. (100m) </button>
@@ -212,6 +213,13 @@
         </video>
     </div>
 
+    <div id="vid15" class="tabcontent">
+        <video height="100%" width="100%" controls autoplay>
+            <source src="/mpeg4/zoom_3_seg.mp4" type="video/mp4">
+            <p>Your browser does not support HLS playback in HTML5.</p>
+        </video>
+    </div>
+
     <!--
     <div id="vid9" class="tabcontent">
         <video height="100%" width="100%" controls autoplay>
@@ -219,6 +227,7 @@
             <p>Your browser does not support HLS playback in HTML5.</p>
         </video>
     </div>
+
     -->
 
     <script>
